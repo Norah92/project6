@@ -7,7 +7,7 @@
 * since some of these tests may require DOM elements. We want
 * to ensure they don't run until the DOM is ready.
 */
-$(function() {
+$(function()  {
 /* This is our first test suite - a test suite just contains
 * a related set of tests. This suite is all about the RSS
 * feeds definitions, the allFeeds variable in our application.
@@ -105,7 +105,8 @@ feedContent = $('.feed').html();
  loadFeed(1, function() {
  expect($('.feed').html() !== feedContent).toBeTruthy();
  done();
-                  });
+        });
               });
-          });
-  }());
+                  });
+                       }
+                          ());
