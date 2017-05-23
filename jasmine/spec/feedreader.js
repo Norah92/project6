@@ -10,8 +10,8 @@
   	$(function() {
        /* This is our first test suite - a test suite just contains
        * a related set of tests. This suite is all about the RSS
-       * feeds definitions, the allFeeds variable in our application.
-       */
+        * feeds definitions, the allFeeds variable in our application.
+        */
     	describe('RSS Feeds', function() {
         /* This is our first test - it tests to make sure that the
          * allFeeds variable has been defined and that it is not
@@ -33,8 +33,7 @@
 	   expect(allFeeds[i].url).toBeDefined();
            expect(allFeeds[i].url).not.toEqual('');					
 		 }
-				 
-		     });
+			});
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
@@ -43,12 +42,10 @@
 	for (var i = 0; i<allFeeds.length; i++) {
 	   expect(allFeeds[i].name).toBeDefined();
            expect(allFeeds[i].name).not.toEqual('');					
-			}
-				 
-	     });
-		 
+			}		 
+	     });	 
     });
-    /* TODO: Write a new test suite named "The menu" */
+       /* TODO: Write a new test suite named "The menu" */
 	describe('The menu', function() {
        /* TODO: Write a test that ensures the menu element is
         * hidden by default. You'll have to analyze the HTML and
@@ -65,7 +62,7 @@
          */
 	it(' menu changes visibility when clicked', function() {
 	$('.menu-icon-link').trigger('click');
-	xpect($('body').hasClass('menu-hidden')).toBe(false); 
+	expect($('body').hasClass('menu-hidden')).toBe(false); 
 		});
 		
 	it(' menu changes visibility when clicked again', function() {
