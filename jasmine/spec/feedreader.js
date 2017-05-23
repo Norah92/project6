@@ -31,8 +31,7 @@ expect(allFeeds.length).not.toBe(0);
 * and that the URL is not empty.
 */
 it('has a URL defined', function() {
-for (var i = 0; i
-<allFeeds.length; i++) {
+for (var i = 0; i <allFeeds.length; i++) {
                   expect(allFeeds[i].url).toBeDefined();
                   expect(allFeeds[i].url).not.toEqual('');					
                   }
@@ -42,8 +41,7 @@ for (var i = 0; i
                   * and that the name is not empty.
                   */
                   it('has a name defined', function() {
-                  for (var i = 0; i
-                  <allFeeds.length; i++) {
+                  for (var i = 0; i <allFeeds.length; i++) {
 expect(allFeeds[i].name).toBeDefined();
 expect(allFeeds[i].name).not.toEqual('');					
 }
